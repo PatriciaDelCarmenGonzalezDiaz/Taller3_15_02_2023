@@ -1,27 +1,7 @@
-//Realice un programa que calcule el máximo de N números 
-//leídos desde teclado
+//Realizar un programa que pueda sumar dos números leídos por teclado 
+//y escribir el resultado
 
-let mayor = 0;
-let num = 0;
-let i = 0;
-let continuar = true;
-let mensaje="Los numeros son: ";
+let num1= Number(prompt("Digite el primer número"));
+let num2= Number(prompt("Digite el segundo número"));
 
-do {
-    num = Number(prompt("Digite un número o una letra si quiere parar"));
-    console.log(num);
-    if (isNaN(num)) {
-        continuar = false;
-    } else {
-        mensaje += num + ", ";
-        if (i== 0) {
-           mayor = num;
-        } else {
-            if (num > mayor) {
-                mayor = num;
-            } 
-        }
-        i++; 
-    }
-} while (continuar)
-alert(mensaje + " y el mayor número es " + mayor);
+alert(`La suma de ${num1} y ${num2} es ${num1 + num2}`);
