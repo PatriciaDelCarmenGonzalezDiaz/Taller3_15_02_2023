@@ -1,28 +1,12 @@
-//Realizar un programa de procesos en el que se almacenen 3 números 
-//en 3 variables A, B y C. El diagrama debe decidir cual es el mayor 
-//y cual es el menor
+//Realizar un programa que permita escribir los 100 primeros pares.
 
-let A = Number(prompt("Digite el primer número"));
-let B = Number(prompt("Digite el segundo número"));
-let C = Number(prompt("Digite el tercer número"));
-let mayor = 0;
-let menor = 0;
+let mensaje = " Los primeros 100 numeros pares son: "
+let par = 0;
 
-if (A == B && B == C) {
-    alert(`los numeros ${A} , ${B} y ${C2} son iguales`);
-} else {
-    if (A > B) {
-        mayor = A;
-        menor = B;
-    } else {
-        mayor = B;
-        menor = A;
-    }
-    if (mayor < C) {
-        mayor = C;
-    }
-    if (menor > C) {
-        menor = C;
-    }
-    alert(`De los numeros ${A} , ${B} y ${C} , el mayor es ${mayor} y el menor es ${menor}`);
+for (var i = 0; i <= 100; i++) {
+    par = i * 2;
+    mensaje += par +", "
 }
+//quitar la ultima ,
+let mensaje2 = mensaje.substring(0,mensaje.length-2);
+alert(mensaje2);
